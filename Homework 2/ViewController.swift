@@ -16,19 +16,19 @@ class ViewController: UIViewController {
             
             class Phone {
                 
-                var number: Int //= 380123456789 если без параметров
-                var model: String //= "iPhone" если без параметров
-                var weight: Int  //= 23 для двух параметров, и если без параметров
+                var number: Int //= 380123456789 if no parameters
+                var model: String //= "iPhone" if no parameters
+                var weight: Int  //= 23 both no parameters and two parameters
                 
                 
-                // Инициализатор с тремя параметрами
+                // Three parameters init
                 init(number: Int, model: String, weight: Int) {
                     self.number = number
                     self.model = model
                     self.weight = weight
                 }
                 
-                //Инициализатор с двумя параметрами
+                //Two parameters init
                 //                init(number: Int, model: String) {
                 //                    self.number = number
                 //                    self.model = model
@@ -121,16 +121,7 @@ class ViewController: UIViewController {
                 func multiply(x: Int, y: Int) -> Int {
                     return x*y
                 }
-                
-//                func divide(x: Int, y: Int) {
-//                    var result = 0
-//                    if y > 0 || y < 0 {
-//                    result = x/y
-//                        print(result)
-//                    } else {
-//                        print("You can't divide by a zero")
-//                    }
-//                }
+            
                 func divide(x: Int, y: Int) -> Int {
                     if y != 0 {
                         return x/y
@@ -350,7 +341,7 @@ class ViewController: UIViewController {
                 case castle (String)
                 case knight (String)
                 case bishop (String)
-                case pawn (String) //в задании тура и ладья, тура = ладья, взял пешку
+                case pawn (String)
             }
             
             let castle = ChessFigures.castle("white")
